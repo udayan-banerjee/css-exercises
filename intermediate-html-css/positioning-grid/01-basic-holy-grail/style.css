@@ -46,3 +46,27 @@ html {
   color: white;
   text-align: left;
 }
+
+/* My solution */
+
+.container {
+  display: grid;
+  gap: 15px; 
+  grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.sidebar {
+  grid-area: 2 / 1 / span 2 / 2;
+}
+
+.article {
+  grid-area: 3 / 2 / 4  / 3;
+}
+
+.footer {
+  grid-area: 4 / 1 / 5 / 3;
+}
